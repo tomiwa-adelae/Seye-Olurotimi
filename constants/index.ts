@@ -20,3 +20,26 @@ export const navLinks = [
 		title: "Contact Me",
 	},
 ];
+
+export const aboutStats = [
+	{
+		number: 2500,
+		suffix: "+",
+		title: "Empowered youth",
+	},
+	{
+		number: 100,
+		suffix: "+",
+		title: "Workshop conducted",
+	},
+	{
+		number: 1000,
+		suffix: "+",
+		title: "Businesses supported",
+	},
+	{
+		number: 30,
+		suffix: "+",
+		title: "Awards & Recognition",
+	},
+];

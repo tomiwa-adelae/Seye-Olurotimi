@@ -32,6 +32,9 @@ const config: Config = {
 					600: "#2F6F60",
 					700: "#204B41",
 				},
+				gray: {
+					400: "#797979",
+				},
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
 				card: {
