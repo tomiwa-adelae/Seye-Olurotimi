@@ -16,7 +16,7 @@ const Header = ({
 	color?: string;
 }) => {
 	return (
-		<header className={`${bgColor} ${color} py-6`}>
+		<header className={` ${color} py-8 z-50`}>
 			<div className="container flex items-center justify-between gap-2">
 				<h3
 					className={`uppercase text-xl lg:text-2xl font-semibold ${inknut_Antiqua.className}`}
