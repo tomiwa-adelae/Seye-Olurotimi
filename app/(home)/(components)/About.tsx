@@ -21,6 +21,7 @@ const About = () => {
 				<SectionTitle
 					title="20+ Years of Experience"
 					subTitle="Learn about me"
+					position="left"
 				/>
 				<p className="text-gray-400 text-sm leading-loose mt-4">
 					With over a decade of experience in business development and
@@ -49,9 +50,11 @@ const About = () => {
 						</div>
 					))}
 				</div>
-				<Button className="mt-8 w-auto" asChild>
-					<Link href="/about">Learn more</Link>
-				</Button>
+				<div>
+					<Button className="mt-8 w-auto" asChild>
+						<Link href="/about">Learn more</Link>
+					</Button>
+				</div>
 			</div>
 		</div>
 	);
