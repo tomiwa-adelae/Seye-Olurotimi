@@ -4,10 +4,12 @@ const SectionTitle = ({
 	subTitle,
 	title,
 	position = "center",
+	description,
 }: {
 	subTitle: string;
 	title: string;
 	position?: string;
+	description?: string;
 }) => {
 	return (
 		<div
@@ -27,6 +29,7 @@ const SectionTitle = ({
 				<h4>{subTitle}</h4>
 			</div>
 			<h2 className="font-bold text-2xl lg:text-3xl">{title}</h2>
+			<p className="text-sm leading-relaxed w-full">{description}</p>
 		</div>
 	);
 };
