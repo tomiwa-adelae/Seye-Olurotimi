@@ -35,7 +35,9 @@ export function MobileNavbar() {
 						alt="Menu Icon"
 						width={1000}
 						height={1000}
-						className="w-auto h-auto invert"
+						className={`w-auto h-auto ${
+							pathname === "/" && "invert"
+						}`}
 					/>
 				</Button>
 			</SheetTrigger>
