@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import { Inknut_Antiqua } from "next/font/google";
 import { navLinks } from "@/constants";
 import { MobileNavbar } from "./MobileNavbar";
+import { usePathname } from "next/navigation";
 
 const inknut_Antiqua = Inknut_Antiqua({
 	subsets: ["latin"],
@@ -15,6 +17,7 @@ const Header = ({
 	bgColor?: string;
 	color?: string;
 }) => {
+	const pathname = usePathname();
 	return (
 		<header className={` ${color} py-8 z-50`}>
 			<div className="container flex items-center justify-between gap-2">
@@ -28,7 +31,10 @@ const Header = ({
 						{navLinks.map(({ title, route }, index) => (
 							<Link
 								key={index}
-								className="uppercase text-xs lg:text-sm font-medium border-gray-200 text-white px-2 pb-2 hover:border-b-2"
+								className={`uppercase text-xs lg:text-sm font-medium  ${
+									pathname === "/" &&
+									"text-white border-gray-200"
+								} px-2 pb-2 hover:border-b-2`}
 								href={route}
 							>
 								{title}
