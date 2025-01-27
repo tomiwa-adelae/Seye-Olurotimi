@@ -1,19 +1,26 @@
-import React from "react";
+import { Inknut_Antiqua } from "next/font/google";
+
+const inknut_Antiqua = Inknut_Antiqua({
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
 
 const SectionTitle = ({
 	subTitle,
 	title,
 	position = "center",
 	description,
+	header,
 }: {
 	subTitle: string;
 	title: string;
 	position?: string;
 	description?: string;
+	header?: boolean;
 }) => {
 	return (
 		<div
-			className={`grid gap-4 ${
+			className={`grid gap-6 ${
 				position === "center" ? "text-center" : "text-left"
 			}`}
 		>
@@ -28,8 +35,17 @@ const SectionTitle = ({
 				</div>
 				<h4>{subTitle}</h4>
 			</div>
-			<h2 className="font-bold text-2xl lg:text-3xl">{title}</h2>
-			<p className="text-sm leading-relaxed w-full">{description}</p>
+			<h2
+				className={`font-bold text-2xl lg:text-3xl ${
+					header &&
+					`${inknut_Antiqua.className} capitalize text-3xl md:text-4xl lg:text-4xl`
+				}`}
+			>
+				{title}
+			</h2>
+			<p className="text-sm text-gray-400 leading-relaxed w-full">
+				{description}
+			</p>
 		</div>
 	);
 };
