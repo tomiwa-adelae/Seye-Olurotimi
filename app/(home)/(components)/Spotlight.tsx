@@ -2,8 +2,7 @@ import SectionTitle from "@/components/shared/SectionTitle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Inknut_Antiqua } from "next/font/google";
-import ImageLibrary from "@/components/shared/ImageLibrary";
-import spotlightImages from "@/constants/spotlightImages";
+import { ImageLibrary } from "@/components/shared/ImageLibrary";
 
 const inknut_Antiqua = Inknut_Antiqua({
 	subsets: ["latin"],
@@ -11,12 +10,21 @@ const inknut_Antiqua = Inknut_Antiqua({
 });
 
 const Spotlight = () => {
+	const images = [
+		{ src: "/assets/images/seye-olurotimi.png" },
+		{ src: "/assets/images/seye-olurotimi-two.jpeg" },
+		{ src: "/assets/images/seye-olurotimi-one.png" },
+		{ src: "/assets/images/seye-olurotimi.png" },
+		{ src: "/assets/images/seye-olurotimi-two.jpeg" },
+		{ src: "/assets/images/seye-olurotimi-one.png" },
+	];
+
 	return (
 		<div className="bg-white text-black pb-16 pt-4 container">
 			<SectionTitle title="Spotlight Moments" subTitle="Who I am" />
 			<div className="mt-8">
 				<div>
-					<ImageLibrary photos={spotlightImages} />
+					<ImageLibrary images={images} />
 				</div>
 				<div className="rounded-3xl mt-8 py-6 px-6 bg-green-400 text-white flex items-center justify-between flex-col sm:flex-row gap-5">
 					<h4

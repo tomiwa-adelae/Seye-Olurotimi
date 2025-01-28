@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { AboutTimeline } from "@/components/ui/about-timeline";
-import { Minus } from "lucide-react";
 
 const Timeline = () => {
 	const data = [
