@@ -23,7 +23,7 @@ export function ImageLibrary({ images }: any) {
 							width={1000}
 							height={1000}
 							alt={`Image ${index + 1}`}
-							className="cursor-pointer rounded-lg w-full h-full object-cover"
+							className="cursor-pointer rounded-lg aspect-square object-cover"
 						/>
 					</div>
 				))}
