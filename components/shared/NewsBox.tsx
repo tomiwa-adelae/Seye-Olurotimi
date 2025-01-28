@@ -14,7 +14,7 @@ const NewsBox = ({
 	duration,
 }: {
 	image: string;
-	index: number;
+	index?: number;
 	title: string;
 	content: string;
 	date: string;

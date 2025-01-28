@@ -158,3 +158,5 @@ export const socialLinks = [
 		color: "#0077B5",
 	},
 ];
+
+export const seyeEmailAddress = "contact@seyeolurotimi.com";

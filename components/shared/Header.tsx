@@ -11,7 +11,6 @@ const inknut_Antiqua = Inknut_Antiqua({
 });
 
 const Header = ({
-	bgColor = "#ff0000",
 	color = "#414141",
 }: {
 	bgColor?: string;
@@ -22,7 +21,9 @@ const Header = ({
 		<header className={` ${color} py-8 z-50`}>
 			<div className="container flex items-center justify-between gap-2">
 				<h3
-					className={`uppercase text-xl lg:text-2xl font-semibold ${inknut_Antiqua.className}`}
+					className={`uppercase text-xl lg:text-2xl font-semibold ${
+						inknut_Antiqua.className
+					} ${pathname !== "/" && "text-green-400"}`}
 				>
 					<Link href="/">Seye Olurotimi</Link>
 				</h3>

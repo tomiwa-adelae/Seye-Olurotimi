@@ -36,10 +36,9 @@ const SectionTitle = ({
 				<h4>{subTitle}</h4>
 			</div>
 			<h2
-				className={`font-bold text-2xl lg:text-3xl ${
-					header &&
-					`${inknut_Antiqua.className} capitalize text-3xl md:text-4xl lg:text-4xl`
-				}`}
+				className={`font-semibold text-2xl lg:text-3xl ${
+					inknut_Antiqua.className
+				}  ${header && `capitalize text-3xl md:text-4xl lg:text-4xl`}`}
 			>
 				{title}
 			</h2>
