@@ -44,6 +44,9 @@ export function ContactForm() {
 		resolver: zodResolver(FormSchema),
 		defaultValues: {
 			name: "",
+			email: "",
+			subject: "",
+			message: ""
 		},
 	});
 
