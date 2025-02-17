@@ -46,7 +46,7 @@ export function ContactForm() {
 			name: "",
 			email: "",
 			subject: "",
-			message: ""
+			message: "",
 		},
 	});
 
@@ -140,7 +140,7 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<Button className="w-full" type="submit">
+					<Button size={"lg"} className="w-full" type="submit">
 						Submit
 					</Button>
 				</form>

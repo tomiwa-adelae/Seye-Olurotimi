@@ -35,6 +35,7 @@ const Spotlight = () => {
 					<Button
 						className="w-full sm:w-auto"
 						variant={"secondary"}
+						size={"lg"}
 						asChild
 					>
 						<Link href="/gallery">Visit my gallery</Link>

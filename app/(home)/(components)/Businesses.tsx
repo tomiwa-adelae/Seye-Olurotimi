@@ -29,7 +29,7 @@ const Businesses = () => {
 							{summary}
 						</p>
 						<div className="mx-auto">
-							<Button asChild>
+							<Button size={"lg"} asChild>
 								<Link href={link}>Learn more</Link>
 							</Button>
 						</div>

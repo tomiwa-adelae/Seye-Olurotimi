@@ -15,7 +15,12 @@ const SendMail = () => {
 			>
 				Want to send an email?
 			</h4>
-			<Button className="w-full sm:w-auto" variant={"secondary"} asChild>
+			<Button
+				size={"lg"}
+				className="w-full sm:w-auto"
+				variant={"secondary"}
+				asChild
+			>
 				<a target="_blank" href={`mailto:${seyeEmailAddress}`}>
 					{seyeEmailAddress}
 				</a>

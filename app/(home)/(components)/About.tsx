@@ -51,7 +51,7 @@ const About = () => {
 					))}
 				</div>
 				<div>
-					<Button className="mt-8 w-auto" asChild>
+					<Button size={"lg"} className="mt-8 w-auto" asChild>
 						<Link href="/about">Learn more</Link>
 					</Button>
 				</div>

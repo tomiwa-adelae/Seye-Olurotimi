@@ -33,13 +33,19 @@ const Showcase = () => {
 					</div>
 					<div className="flex items-center justify-start gap-4 mt-8 w-full md:w-auto">
 						<Button
+							size={"lg"}
 							className="w-full"
 							variant={"secondary"}
 							asChild
 						>
 							<Link href="/about">Learn more</Link>
 						</Button>
-						<Button className="w-full" variant={"black"} asChild>
+						<Button
+							size={"lg"}
+							className="w-full"
+							variant={"black"}
+							asChild
+						>
 							<Link href="/contact">Contact me</Link>
 						</Button>
 					</div>
